@@ -1,0 +1,23 @@
+#Categorical PLot
+
+import seaborn as sns
+tips = sns.load_dataset('tips')
+
+sns.barplot(x='sex',y='total_bill',data=tips,estimator=np.std)
+sns.countplot(x='sex',data=tips)
+sns.boxplot(x='day',y='bill',data=tips,hue='smoker')
+sns.violinplot(x='day',y='bill',data=tips,hue='sex',split=True)
+sns.stripplot(x='day',y='bill',data=tips,jitter=True,hue='sex')
+sns.swarmplot(x='day',y='bill',data=tips,color='black')
+sns.factorplot(x='day',y='bill',data=tips,kind='bar|violin')
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+import seaborn as sns
+import matplot.pyplot as plt
+tips = sns.load_dataset('tips')
+flights = sns.load_dataset('flights')
+
+sns.set_style('white|ticks|darkgrid|whitegrid')
+sns.countplot(x='sex',data=tips)
+sns.despine()
+
+plt.figure(figsize=(12,3))
+sns.countplot(x='sex',data=tips)
+
+sns.set_context('poster|notebook',font_scale=3)
+
+sna.lmplot(x='bill',y='tip',data=tips,hue='sex',palette='coolwarm')
+
+
+

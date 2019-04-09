@@ -1,0 +1,6 @@
+import seaborn as sns
+
+sns.distplot(tips['total_bill'])  #histogram
+sns.jointplot(x=,y=,data=tips)
+sns.pairplot(tips,hue='sex',palette='coolwarm')
+sns.rugplot(tips['total_bill']))

@@ -1,0 +1,22 @@
+import seaborn as sns
+tips = sns.load_dataset('tips')
+flights = sns.load_dataset('flights')
+
+tc = tips.corr()
+sns.heatmap(tc,annot=True,cmap='coolwarm')
+
+fp = flight.pivot_table(index='month',column='year',values='passengers')
+
+sns.heatmap(fp,cmap='magma',linecolor='white',linewidths=1)
+
+#ClusterMap
+
+sns.clustermap(fp,standard_scale=1,cmap='coolwarm')
+
+
+
+
+
+
+
+
